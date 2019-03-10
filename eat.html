@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- 为了设置视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/eat.css">
+
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+            <a href="#" class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        <h1 class="mui-title">食物</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item mui-active" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="test.html">
+            <span class="mui-icon fa fa-heartbeat"></span>
+            <span class="mui-tab-label">体质检测</span>
+        </a>
+        <a class="mui-tab-item" href="news.html">
+            <span class="mui-icon fa fa-map-o"></span>
+            <span class="mui-tab-label">公告咨询</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">个人中心</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <div class="foods-list">
+            <div class="foods-item">
+                <div class="food">
+                    <img src="img/猕猴桃.jpg">
+                </div>
+                <div class="title">猕猴桃</div>
+                <div class="sub">
+                    <p class="flag">
+                        <span class="yes mui-icon mui-icon-checkmarkempty">能吃</span>
+                        <del><span class="no mui-icon mui-icon-closeempty">不能吃</span></del>
+                    </p>
+
+                </div>
+            </div>
+            <div class="foods-item">
+                <div class="food">
+                    <img src="img/樱桃.jpg">
+                </div>
+                <div class="title">樱桃</div>
+                <div class="sub">
+                    <p class="flag">
+                            <span class="yes mui-icon mui-icon-checkmarkempty">能吃</span>
+                            <del><span class="no mui-icon mui-icon-closeempty">不能吃</span></del>
+                    </p>
+
+                </div>
+            </div>
+            <div class="foods-item">
+                <div class="food">
+                    <img src="img/葡萄.jpg">
+                </div>
+                <div class="title">葡萄</div>
+                <div class="sub">
+                    <p class="flag">
+                            <span class=" mui-icon mui-icon-checkmarkempty">能吃</span>
+                            <del><span class="yes  mui-icon mui-icon-closeempty">不能吃</span></del>
+                    </p>
+
+                </div>
+            </div>
+            <div class="foods-item">
+                <div class="food">
+                    <img src="img/西瓜.jpg">
+                </div>
+                <div class="title">西瓜</div>
+                <div class="sub">
+                    <p class="flag">
+                            <span class="mui-icon mui-icon-checkmarkempty">能吃</span>
+                            <del><span class="yes mui-icon mui-icon-closeempty">不能吃</span></del>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- <button type="danger" size="large" @click="loadmore">加载更多...</button> -->
+    </div>
+
+
+</body>
+
+</html>
