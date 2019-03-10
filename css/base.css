@@ -1,0 +1,38 @@
+body {
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+    /* 去除原样式中所带样式 */
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #000;
+
+}
+.mui-content{
+    background-color: #fff;
+    margin: 0 3px;
+}
+
+.my-header{
+    background-color: skyblue;
+}
+.my-header .mui-title{
+    color: #fff;
+}
+.my-header .mui-icon{
+    color: #fff;
+}
+.my-footer{
+    background-color: skyblue;
+}
+
+.my-footer .mui-tab-item{
+    color: #fff;
+}
+
+.my-footer .mui-tab-item.mui-active{
+    color: yellow;
+}

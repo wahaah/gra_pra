@@ -1,0 +1,20 @@
+.mui-content-padded {
+    padding: 0;
+    margin:6px 0;
+}
+.mui-content-padded img{
+    height: 210px;
+    width: 100%;
+    
+}
+.mui-navigate-right img{
+    width: 40px;
+    height: 40px;
+}
+.mui-table-view-cell a{
+    font-size: 14px;
+   
+}
+.mui-table-view-cell span {
+    margin-right: 10px;
+}

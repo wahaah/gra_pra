@@ -1,0 +1,59 @@
+.photobox{
+
+}
+.mui-content h4,
+.photobox h4{
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    background-color: #eee;
+    /* padding: 10px; */
+    padding: 5px;
+    /* margin: 1px; */
+}
+.mui-icon-download:before,
+.mui-icon-pengyouquan:before{
+    font-size: 22px;
+    margin-right: 8px;
+    color: orangered;
+    /* vertical-align: center; */
+}
+.photobox .pink{
+    width: 100%;
+    height: 200px;
+    background-color: #ffddf8;
+}
+.pink span{
+    display: block;
+    text-align: center;
+}
+.mui-icon-camera:before{
+    font-size: 100px;
+}
+.pink a{
+    border-radius: 20px;
+    width: 160px;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+.pink p {
+    /* margin: 0 auto; */
+    text-align: center;
+    /* margin: 10px; */
+}
+.mui-content-padded{
+    margin: 0;
+}
+.mui-content-padded{
+    padding: 8px 0;
+    font-size: 16px;
+}
+.mui-btn-block{
+    padding: 5px 0;
+    background-color: #eee;
+    font-size: 16px;
+}
+#result {
+    background-color: rgb(193, 233, 219);
+    padding: 2px 0;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.mui-slider img {
+			height: 220px;
+		}
+	</style>
+	<!-- 为了设置视口 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.css">
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="js/public.js"></script>
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">贴心管家</h1>
+		<!-- mui-pull-right右浮动 -->
+		<!-- <a class="mui-icon mui-icon-search mui-pull-right"></a> -->
+	</header>
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="test.html">
+			<span class="mui-icon fa fa-heartbeat"></span>
+			<span class="mui-tab-label">体质检测</span>
+		</a>
+		<a class="mui-tab-item" href="news.html">
+			<!-- fa fa-shopping-cart  使用fontawesome图标
+            mui-icon加上后图标变为横向 -->
+			<span class="mui-icon fa fa-map-o"></span>
+			<span class="mui-tab-label">公告咨询</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">个人中心</span>
+		</a>
+	</nav>
+	<div class="mui-content">
+		<!-- 轮播图部分 -->
+		<div class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/2.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="img/1.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="img/3.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
+				<!--支持循环，需要重复图片节点-->
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/1.jpg" /></a></div>
+			</div>
+		</div>
+
+		<!--  -->
+		
+		<h4><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>孕期小工具</h4>
+		<!-- 九宫格部分 -->
+		<ul class="fenglei  mui-table-view mui-grid-view mui-grid-9">
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<router-link  to="/home/news">
+						<img src="./img/icon-01.png" alt="">
+						<div class="mui-media-body">能不能吃</div>
+					</router-link></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<router-link to="/home/photolist">
+						 <img src="./img/icon-02.png" alt="">
+						<div class="mui-media-body">能不能做</div>
+					</router-link></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<router-link to="/home/goodslist">		                     
+						<img src="./img/icon-03.png" alt="">
+						<div class="mui-media-body">胎教音乐</div>
+					</router-link></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						<img src="./img/icon-04.png" alt="">
+						<div class="mui-media-body">知识百科</div>
+					</a></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="#">
+						 <img src="./img/icon-05.png" alt="">
+						<div class="mui-media-body">预待产包</div>
+					</a></li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+					<a href="map.html">
+						 <img src="./img/icon-06.png" alt="">
+						<div class="mui-media-body">离我最近</div>
+					</a></li>
+			   
+			</ul>
+	</div>
+	<script>
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+</body>
+
+</html>

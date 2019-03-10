@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    padding: 2px;
+}
+
+h4{
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    background-color: rgb(210, 235, 245);
+    padding: 8px 5px;
+    margin: 1px;
+    width: 100%;
+}
+.mui-icon-spinner-cycle:before{
+    font-size: 22px;
+    margin-right: 8px;
+    color: orangered;
+    vertical-align: center;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+    background-color: #fff;
+}
+
+.fenglei img {
+    width: 60px;
+    height: 60px;
+}
+
+.mui-table-view-cell {
+    border-right: none;
+    border-bottom: none;
+
+}
+
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+    font-size: 12px;
+}
