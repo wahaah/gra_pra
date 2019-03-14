@@ -57,3 +57,49 @@
     background-color: rgb(193, 233, 219);
     padding: 2px 0;
 }
+.mui-table-view-cell.mui-collapse .mui-collapse-content{
+    padding: 8px 5px;
+}
+
+
+form span{
+    font-size: 14px;
+}
+.mui-navigate-right{
+    font-size: 14px;
+    /* background-color: rgb(220, 231, 247); */
+}
+.mui-table-view-cell.mui-collapse.mui-active{
+    background-color: rgb(252, 231, 243);
+
+}
+.mui-table-view-cell{
+    padding: 10px 15px;
+}
+.mui-input-group .mui-input-row,
+.mui-input-group .mui-input-row input{
+    font-size: 14px;
+}
+
+.mui-collapse-content .button{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(181, 236, 232);
+    top: 3px;
+    margin: 0 auto;
+}
+.mui-collapse-content .button a {
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    /* margin: auto auto; */
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    font-size: 16px;
+    
+
+}
