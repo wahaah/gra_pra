@@ -28,16 +28,25 @@
         }
 
         .mui-col-xs-4 {
-            width: 20%;
+            width: 25%;
         }
+      
+        
     </style>
 </head>
 
 <body>
     <header class="mui-bar mui-bar-nav my-header">
         <a href="#" class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
+        <!-- 搜索 -->
 
-        <h1 class="mui-title">最新动态</h1>
+        <h1 class="mui-title">
+            <!-- 顶部搜索部分 -->
+            <div class="mui-input-row ">
+					<input type="search" class="mui-input-clear" placeholder="最新动态">
+				</div>
+            <!-- 搜索结束 -->
+        </h1>
         <!-- mui-pull-right右浮动 -->
         <a class="mui-icon mui-icon-search mui-pull-right"></a>
     </header>
@@ -61,7 +70,6 @@
             <span class="mui-tab-label">个人中心</span>
         </a>
     </nav>
-    <!-- <div class="mui-content"> -->
 
 
     <!-- <style>
@@ -78,7 +86,12 @@
             <h1 class="mui-title">顶部选项卡-可左右拖动(div)</h1>
         </header> -->
     <div class="mui-content">
+
+
         <div id="slider" class="mui-slider">
+
+
+
             <div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <a class="mui-control-item" href="#item1mobile">
                     饮食
@@ -87,15 +100,16 @@
                     运动
                 </a>
                 <a class="mui-control-item" href="#item3mobile">
-                    注意
-                </a>
-                <a class="mui-control-item" href="#item4mobile">
                     胎教
                 </a>
-                <a class="mui-control-item" href="#item5mobile">
+                <a class="mui-control-item" href="#item4mobile">
                     圈子
                 </a>
+                
             </div>
+            <!-- <div class="mui-input-row mui-search">
+                    <input type="search" class="mui-input-clear" placeholder="" data-input-clear="1" data-input-search="1"><span class="mui-icon mui-icon-clear mui-hidden"></span><span class="mui-placeholder"><span class="mui-icon mui-icon-search"></span><span></span></span>
+                </div> -->
             <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
             <div class="mui-slider-group">
                 <div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
@@ -121,52 +135,52 @@
 
                             </ul> -->
                             <ul class="mui-table-view">
-                                    <li class="mui-table-view-cell mui-media">
-                                        <a href="javascript:;">
-                                            <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
-                                            <div class="mui-media-body">
-                                                幸福
-                                                <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="mui-table-view-cell mui-media">
-                                        <a href="javascript:;">
-                                            <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
-                                            <div class="mui-media-body">
-                                                木屋
-                                                <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="mui-table-view-cell mui-media">
-                                        <a href="javascript:;">
-                                            <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
-                                            <div class="mui-media-body">
-                                                CBD
-                                                <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="mui-table-view-cell mui-media">
-                                            <a href="javascript:;">
-                                                <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
-                                                <div class="mui-media-body">
-                                                    CBD
-                                                    <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="mui-table-view-cell mui-media">
-                                                <a href="javascript:;">
-                                                    <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
-                                                    <div class="mui-media-body">
-                                                        CBD
-                                                        <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                </ul> 
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
+                                        <div class="mui-media-body">
+                                            幸福
+                                            <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
+                                        <div class="mui-media-body">
+                                            木屋
+                                            <p class='mui-ellipsis'>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
+                                        <div class="mui-media-body">
+                                            CBD
+                                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
+                                        <div class="mui-media-body">
+                                            CBD
+                                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="mui-table-view-cell mui-media">
+                                    <a href="javascript:;">
+                                        <img class="mui-media-object mui-pull-left" src="./img/icon-07.png">
+                                        <div class="mui-media-body">
+                                            CBD
+                                            <p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -203,17 +217,7 @@
                     </div>
 
                 </div>
-                <div id="item5mobile" class="mui-slider-item mui-control-content">
-                    <div id="scroll5" class="mui-scroll-wrapper">
-                        <div class="mui-scroll">
-                            <div class="mui-loading">
-                                <div class="mui-spinner">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                
             </div>
         </div>
 
@@ -275,15 +279,13 @@
                             item3.querySelector('.mui-scroll').innerHTML = html3;
                         }, 500);
                     }
-                }
-                else if (e.detail.slideNumber === 3) {
+                } else if (e.detail.slideNumber === 3) {
                     if (item4.querySelector('.mui-loading')) {
                         setTimeout(function () {
                             item4.querySelector('.mui-scroll').innerHTML = html4;
                         }, 500);
                     }
-                }
-                else if (e.detail.slideNumber === 4) {
+                } else if (e.detail.slideNumber === 4) {
                     if (item5.querySelector('.mui-loading')) {
                         setTimeout(function () {
                             item5.querySelector('.mui-scroll').innerHTML = html5;

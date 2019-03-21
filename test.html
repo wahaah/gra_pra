@@ -26,6 +26,17 @@
 
     <link rel="stylesheet" href="./css/ruler.css">
     <script src="./js/ruler.js"></script>
+
+    <link rel="stylesheet" href="css/ruler1.css">
+    <script src="js/ruler1.js"></script>
+    <!-- <script src="js/in01.js"></script> -->
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
+
+    <style>
+        .page .page-main{
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,72 +84,145 @@
         <!-- 体重 -->
         <ul class="mui-table-view">
             <li class="mui-table-view-cell mui-collapse">
-                <a class="mui-navigate-right" href="#">身高/体重</a>
-                <div class="mui-collapse-content">
+                <a class="mui-navigate-right" href="#">年龄/身高/体重</a>
+                <!-- <div class="mui-collapse-content">
                     <form class="mui-input-group">
                         <div class="mui-input-row">
                             <label>身高</label>
                             <input type="text" class="mui-input-clear" placeholder="请输入您的身高">
                         </div>
 
-                        <!-- <div class="mui-button-row">
-                                    <button type="button" class="mui-btn mui-btn-primary">确认</button>
-                                    <button type="button" class="mui-btn mui-btn-danger">取消</button>
-                                </div> -->
+                       
                     </form>
-                </div>
-                <!-- </li> -->
-                <!--  -->
-                <!-- <li class="mui-table-view-cell mui-collapse">
-                <a class="mui-navigate-right" href="#">体重</a> -->
+                </div> -->
+
+
+
+
+
+
                 <div class="mui-collapse-content">
-                    <form>
-                        <span class="tit">体重刻度（单位/kg）：
-                            <span id="num">0.00</span>kg
-                        </span>
-                        <div id="ruler-container">
-                            <div id="triangle"></div>
-                            <div id="ruler" data-offset="0">
-                                <ul id="ruler-ul">
-                                    <li>
-                                        <span>10</span>
-                                    </li>
-                                    <li>
-                                        <span>20</span>
-                                    </li>
-                                    <li>
-                                        <span>30</span>
-                                    </li>
-                                    <li>
-                                        <span>40</span>
-                                    </li>
-                                    <li>
-                                        <span>50</span>
-                                    </li>
-                                    <li>
-                                        <span>60</span>
-                                    </li>
-                                    <li>
-                                        <span>70</span>
-                                    </li>
-                                    <li>
-                                        <span>80</span>
-                                    </li>
-                                    <li>
-                                        <span>90</span>
-                                    </li>
-                                    <li>
-                                        <span>100</span>
-                                    </li>
-                                </ul>
+
+                    <div class="page" data-page='profile1'>
+                        <div class="page-main">
+                            <input type="hidden" name="first_screen" value="30##150##50">
+                            <div class="row">
+                                <label for="" class="label">您的年龄 <span class="number age-num" initial-value="12" value="30">30</span><span
+                                        class="letter">岁</span></label>
+                                <div class="ruler ruler-age">
+                                    <div class="main" value="-1">
+                                        <ul data-initial='true'>
+                                            <li><span class="num">18</span></li>
+                                            <li><span class="num">19</span></li>
+                                            <li><span class="num">20</span></li>
+                                            <li><span class="num">21</span></li>
+                                            <li><span class="num">22</span></li>
+                                            <li><span class="num">23</span></li>
+                                            <li><span class="num">24</span></li>
+                                            <li><span class="num">25</span></li>
+                                            <li><span class="num">26</span></li>
+                                            <li><span class="num">27</span></li>
+                                            <li><span class="num">28</span></li>
+                                            <li><span class="num">29</span></li>
+                                            <li><span class="num">30</span></li>
+                                            <li><span class="num">31</span></li>
+                                            <li><span class="num">32</span></li>
+                                            <li><span class="num">33</span></li>
+                                            <li><span class="num">34</span></li>
+                                            <li><span class="num">35</span></li>
+                                            <li><span class="num">36</span></li>
+                                            <li><span class="num">37</span></li>
+                                            <li><span class="num">38</span></li>
+                                            <li><span class="num">39</span></li>
+                                            <li><span class="num">40</span></li>
+                                            <li><span class="num">41</span></li>
+                                            <li><span class="num">42</span></li>
+                                            <li><span class="num">43</span></li>
+                                            <li><span class="num">44</span></li>
+                                            <li><span class="num">45</span></li>
+                                            <li><span class="num">46</span></li>
+                                            <li><span class="num">47</span></li>
+                                            <li><span class="num">48</span></li>
+                                            <li><span class="num">49</span></li>
+                                            <li><span class="num">50</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="arrow"></div>
+                                </div>
                             </div>
 
-                        </div>
-                        <div class="button">
-                            <a href="bmi.html">确定</a>
-                        </div>
-                    </form>
+                            <div class="row">
+                                <label for="" class="label">您的身高 <span class="number height-num" initial-value="10"
+                                        value="150">150</span><span class="letter">cm</span></label>
+                                <div class="ruler ruler-height">
+                                    <div class="main" value="-1">
+                                        <ul data-initial='true'>
+                                            <li><span class="num">140</span></li>
+                                            <li><span class="num">150</span></li>
+                                            <li><span class="num">160</span></li>
+                                            <li><span class="num">170</span></li>
+                                            <li><span class="num">180</span></li>
+                                            <li><span class="num">190</span></li>
+                                            <li><span class="num">200</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="arrow"></div>
+                                </div>
+                            </div>
 
+                            <form>
+                                    <span class="tit">体重刻度（单位/kg）：
+                                        <span id="num">0.00</span>kg
+                                    </span>
+                                    <div id="ruler-container">
+                                        <div id="triangle"></div>
+                                        <div id="ruler" data-offset="0">
+                                            <ul id="ruler-ul">
+                                                <li>
+                                                    <span>10</span>
+                                                </li>
+                                                <li>
+                                                    <span>20</span>
+                                                </li>
+                                                <li>
+                                                    <span>30</span>
+                                                </li>
+                                                <li>
+                                                    <span>40</span>
+                                                </li>
+                                                <li>
+                                                    <span>50</span>
+                                                </li>
+                                                <li>
+                                                    <span>60</span>
+                                                </li>
+                                                <li>
+                                                    <span>70</span>
+                                                </li>
+                                                <li>
+                                                    <span>80</span>
+                                                </li>
+                                                <li>
+                                                    <span>90</span>
+                                                </li>
+                                                <li>
+                                                    <span>100</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+            
+                                    </div>
+                                    <div class="button">
+                                        <a href="bmi.html">确定</a>
+                                    </div>
+                            </form>
+            
+                        </div>
+                    </div>
+
+
+
+                   
                 </div>
             </li>
         </ul>

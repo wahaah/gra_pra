@@ -58,21 +58,26 @@
 		</a>
 		<ul class="mui-table-view">
 			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right" href="#"><span class="mui-icon mui-icon-contact"></span> 个人信息</a>
+				<a class="mui-navigate-right" href="mine.html"><span class="mui-icon mui-icon-contact"></span> 个人信息</a>
 			</li>
 			<li class="mui-table-view-cell">
 				<a href="modify.html" class="mui-navigate-right"><span class="mui-icon mui-icon-compose"></span> 修改密码</a>
 			</li>
 			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right"><span class="mui-icon mui-icon-email"></span> 检查报告</a>
+				<a class="mui-navigate-right" href="weather.html"><span class="mui-icon mui-icon-email"></span> 天气变化</a>
 			</li>
 			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right"><span class="mui-icon mui-icon-email"></span> 日程提醒</a>
+				<a class="mui-navigate-right" href="chanjianbaogao.html"><span class="mui-icon mui-icon-email"></span> 产检报告</a>
 			</li>
 			<li class="mui-table-view-cell">
-				<a class="mui-navigate-right"><span class="mui-icon mui-icon-email"></span> 天气变化</a>
+				<a class="mui-navigate-right" href="bmi.html"><span class="mui-icon mui-icon-contact"></span>我的体质监测</a>
 			</li>
-			
+
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right" href="beiwanglu.html"><span class="mui-icon mui-icon-email"></span> 日程提醒</a>
+			</li>
+
+
 		</ul>
 		<ul class="mui-table-view">
 			<li class="mui-table-view-cell" style="text-align: center;">
@@ -81,5 +86,13 @@
 		</ul>
 	</div>
 </body>
+<script>
+	// mui('body').on('tap', 'a', function() {
+	// 	window.top.location.href = this.href;
+	// });
+	//解决 所有a标签 导航不能跳转页面
+	// mui.init(); 
+	// mui('body').on('tap','a',function(){document.location.href=this.href;});
+</script>
 
 </html>
