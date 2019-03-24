@@ -8,10 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.css">
 	<script src="assets/mui/js/mui.min.js"></script>
 	<script src="assets/zepto/zepto.min.js"></script>
 	<script src="js/public.js"></script>
+	<style>
+		input[name='sex'] {
+			display: inline-block;
+		}
+	</style>
 </head>
 
 <body>
@@ -21,55 +27,58 @@
 		<!-- <a class="mui-icon mui-icon-search mui-pull-right"></a> -->
 	</header>
 	<nav class="mui-bar mui-bar-tab my-footer">
-		<a class="mui-tab-item mui-active" href="index.html">
-				<span class="mui-icon mui-icon-home"></span>
-				<span class="mui-tab-label">首页</span>
-			</a>
+		<!-- <a class="mui-tab-item mui-active" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
 		<a class="mui-tab-item" href="test.html">
 			<span class="mui-icon fa fa-heartbeat"></span>
 			<span class="mui-tab-label">体质检测</span>
 		</a>
 		<a class="mui-tab-item" href="news.html">
-			<!-- fa fa-shopping-cart  使用fontawesome图标
-            mui-icon加上后图标变为横向 -->
 			<span class="mui-icon fa fa-map-o"></span>
 			<span class="mui-tab-label">公告咨询</span>
 		</a>
 		<a class="mui-tab-item" href="user.html">
 			<span class="mui-icon mui-icon-person"></span>
 			<span class="mui-tab-label">个人中心</span>
-		</a>
+		</a> -->
 	</nav>
 	<div class="mui-content">
 		<!-- 输入表单模块 -->
 		<form class="mui-input-group">
-                <div class="mui-input-row">
-                    <label>用户名</label>
-                    <input type="text" class="mui-input-clear" name="username" placeholder="请输入用户名">
-                </div>
-                <div class="mui-input-row">
-                    <label>手机号</label>
-                    <input type="text" class="mui-input-clear" name="mobile" placeholder="请输入手机号">
-                </div>
-                <div class="mui-input-row">
-                    <label>密码</label>
-                    <input type="password" class="mui-input-password" name="password" placeholder="请输入密码">
-                </div>
-                <div class="mui-input-row">
-                    <label>确认密码</label>
-                    <input type="password" class="mui-input-password" name="againpass" placeholder="请输入密码">
-                </div>
-                <div class="mui-input-row">
-                    <label>认证码</label>
-                    <input type="text" class="mui-input-clear" name="vcode" placeholder="认证码">
-                    <a href="javascript:;" class="getCode" id="getCode">获取认证码</a>
-                </div>
-                <div class="mui-button-row">
-                    <button id="register-btn" type="button" class="mui-btn mui-btn-primary">注册</button>
-                    <!-- <button typec="button" class="mui-btn mui-btn-danger">取消</button> -->
-                </div>
-            </form>
-            <a href="login.html" class="login-now">立即登陆</a>
+			<div class="mui-input-row">
+				<label>用户名</label>
+				<input type="text" class="mui-input-clear" name="username" placeholder="请输入用户名">
+			</div>
+			<div class="mui-input-row">
+				<label>手机号</label>
+				<input type="text" class="mui-input-clear" name="mobile" placeholder="请输入手机号">
+			</div>
+			<div class="mui-input-row">
+				<label>密码</label>
+				<input type="password" class="mui-input-password" name="password" placeholder="请输入密码">
+			</div>
+			<div class="mui-input-row">
+				<label>确认密码</label>
+				<input type="password" class="mui-input-password" name="againpass" placeholder="请输入密码">
+			</div>
+			<div class="mui-input-row">
+				<label>住址 </label>
+				<input type="text" class="mui-input-clear" name="address" placeholder="请输入家庭住址">
+			</div>
+			<div class="mui-input-row">
+				<label>认证码</label>
+				<input type="text" class="mui-input-clear" name="vcode" placeholder="认证码">
+				<a href="javascript:;" class="getCode" id="getCode">获取认证码</a>
+			</div>
+			<div class="mui-button-row">
+				<button id="register-btn" type="button" class="mui-btn mui-btn-primary">注册</button>
+				<!-- <button typec="button" class="mui-btn mui-btn-danger">取消</button> -->
+			</div>
+		</form>
+		<a href="login.html" class="login-now">立即登陆</a>
 	</div>
-	</body>
-	</html>
+</body>
+
+</html>
