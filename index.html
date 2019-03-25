@@ -20,8 +20,15 @@
 	<script src="js/public.js"></script>
 	<style>
 		* {
-            touch-action: pan-y;
-        }
+			touch-action: pan-y;
+		}
+		.mui-media-body .tit {
+			font-size: 14px;
+			color: black;
+		}
+		.mui-ellipsis{
+			font-size: 12px;
+		}
 	</style>
 </head>
 
@@ -70,41 +77,71 @@
 		</div>
 
 		<!--  -->
-		
+
 		<h4><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>孕期小工具</h4>
 		<!-- 九宫格部分 -->
 		<ul class="fenglei  mui-table-view mui-grid-view mui-grid-9">
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="eat.html">
-						<img src="./img/icon-01.png" alt="">
-						<div class="mui-media-body">能不能吃</div>
-					</a></li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="did.html">
-						 <img src="./img/icon-02.png" alt="">
-						<div class="mui-media-body">能不能做</div>
-					</a></li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="teach.html">		                     
-						<img src="./img/icon-03.png" alt="">
-						<div class="mui-media-body">亲子视频</div>
-					</a></li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="baike.html">
-						<img src="./img/icon-04.png" alt="">
-						<div class="mui-media-body">知识百科</div>
-					</a></li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="prepare.html">
-						 <img src="./img/icon-05.png" alt="">
-						<div class="mui-media-body">预待产包</div>
-					</a></li>
-				<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-					<a href="map.html">
-						 <img src="./img/icon-06.png" alt="">
-						<div class="mui-media-body">离我最近</div>
-					</a></li>
-			   
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="eat.html">
+					<img src="./img/icon-01.png" alt="">
+					<div class="mui-media-body">能不能吃</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="did.html">
+					<img src="./img/icon-02.png" alt="">
+					<div class="mui-media-body">能不能做</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="teach.html">
+					<img src="./img/icon-03.png" alt="">
+					<div class="mui-media-body">亲子视频</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="baike.html">
+					<img src="./img/icon-04.png" alt="">
+					<div class="mui-media-body">知识百科</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="prepare.html">
+					<img src="./img/icon-05.png" alt="">
+					<div class="mui-media-body">预待产包</div>
+				</a></li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+				<a href="map.html">
+					<img src="./img/icon-06.png" alt="">
+					<div class="mui-media-body">离我最近</div>
+				</a></li>
+
+		</ul>
+		<h4><span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>今日之事</h4>
+		<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/shanghuo.jpg">
+						<div class="mui-media-body">
+						 <p class="tit">孕妇上火怎么办</p>	
+							<p class='mui-ellipsis'>对于上火食疗是很简单...</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/doufu.jpg">
+						<div class="mui-media-body">
+							<p class="tit">多吃豆腐有助于补充蛋白质</p>
+							<p class='mui-ellipsis'>豆腐富含多种营养元素...</p>
+						</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<img class="mui-media-object mui-pull-right" src="img/baogao.jpg">
+						<div class="mui-media-body">
+							<p class="tit">教你看懂报告单</p>
+							<p class='mui-ellipsis'>学会自己看报告...</p>
+						</div>
+					</a>
+				</li>
 			</ul>
 	</div>
 	<script>
