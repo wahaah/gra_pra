@@ -136,7 +136,7 @@ function datt(nian,yue,ri){
                 _this.addClass('act_date');
                 _this.siblings('li').removeClass('act_date');
                 var dr=_this.attr('data-date');
-                // console.log(dr);
+                console.log(dr);
             });
         }else{
             $('.date ul li').eq(k).addClass('no_date');

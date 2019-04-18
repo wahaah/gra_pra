@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input class="js_upFile cover1" type="file" name="cover" accept="image/*" capture="camera" multiple/>
+
+</body>
+<script src="">
+    $(function () {
+    //获取浏览器的userAgent,并转化为小写
+    var ua = navigator.userAgent.toLowerCase();
+    //判断是否是苹果手机，是则是true
+    var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+    if (isIos) {
+        $("input:file").removeAttr("capture");
+    };
+})
+</script>
+</html>

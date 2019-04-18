@@ -1,8 +1,7 @@
-.photobox{
+.photobox {}
 
-}
 .mui-content h4,
-.photobox h4{
+.photobox h4 {
     font-size: 16px;
     color: #000;
     font-weight: normal;
@@ -11,95 +10,108 @@
     padding: 5px;
     /* margin: 1px; */
 }
+
 .mui-icon-download:before,
-.mui-icon-pengyouquan:before{
+.mui-icon-pengyouquan:before {
     font-size: 22px;
     margin-right: 8px;
     color: orangered;
     /* vertical-align: center; */
 }
-.photobox .pink{
+
+.photobox .pink {
     width: 100%;
     height: 200px;
     background-color: #ffddf8;
 }
-.pink span{
+
+.pink span {
     display: block;
     text-align: center;
 }
-.mui-icon-camera:before{
+
+.mui-icon-camera:before {
     font-size: 100px;
 }
-.pink a{
+
+.pink a {
     border-radius: 20px;
     width: 160px;
     /* text-align: center; */
     margin: 0 auto;
 }
+
 .pink p {
     /* margin: 0 auto; */
     text-align: center;
     /* margin: 10px; */
 }
-.mui-content-padded{
+
+.mui-content-padded {
     margin: 0;
 }
-.mui-content-padded{
+
+.mui-content-padded {
     padding: 8px 0;
     font-size: 16px;
 }
-.mui-btn-block{
+
+.mui-btn-block {
     padding: 5px 0;
     background-color: #eee;
     font-size: 16px;
 }
+
 #result {
     background-color: rgb(193, 233, 219);
     padding: 2px 0;
 }
-.mui-table-view-cell.mui-collapse .mui-collapse-content{
+
+.mui-table-view-cell.mui-collapse .mui-collapse-content {
     padding: 8px 5px;
 }
 
 
-form span{
+form span {
     font-size: 14px;
 }
-.mui-navigate-right{
+
+.mui-navigate-right {
     font-size: 14px;
     /* background-color: rgb(220, 231, 247); */
 }
-.mui-table-view-cell.mui-collapse.mui-active{
+
+.mui-table-view-cell.mui-collapse.mui-active {
     background-color: rgb(252, 231, 243);
 
 }
-.mui-table-view-cell{
+
+.mui-table-view-cell {
     padding: 10px 15px;
 }
+
 .mui-input-group .mui-input-row,
-.mui-input-group .mui-input-row input{
+.mui-input-group .mui-input-row input {
     font-size: 14px;
 }
 
-.mui-collapse-content .button{
+.mui-collapse-content .btn .butt {
+    float: left;
     position: relative;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: rgb(181, 236, 232);
     top: 3px;
-    margin: 0 auto;
 }
-.mui-collapse-content .button a {
+
+.mui-collapse-content .btn .butt a {
     display: inline-block;
     color: #fff;
     position: absolute;
-    /* margin: auto auto; */
     top: 50%;
     left: 50%;
     margin-left: -15px;
     margin-top: -15px;
     font-size: 16px;
-    
-
 }
