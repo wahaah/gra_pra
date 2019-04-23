@@ -239,10 +239,6 @@ $(function(){
 </script>
 <script>
 $(function(){
-    // var isClick = true;
-    //     // $("#input-serach").on("change",function(){
-    //     $("tbody").on("click",function(){
-    //         var city = $("#input-serach").val();
     var isClick = true;
     $("tbody").on("tap", "button", function () {
         var city = $("#input-serach").val();
@@ -257,7 +253,7 @@ $(function(){
             // 默认使用success
             success: function (result) {
                 // console.log(result);
-                // console.log(result.results[0].index)
+                // console.log(result.results.index)
                 var html1 = template("detailTemp", {
                     "item1": result.results[0].index,
                 });
