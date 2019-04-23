@@ -93,7 +93,7 @@
         <h1 class="mui-title">
                     <!-- 顶部搜索部分 -->
                     <div class="mui-input-row">
-                            <input type="search" id="input-serach" class="mui-input-clear" placeholder="请输入你要搜索的城市">
+                            <input type="search" id="input-serach" class="mui-input-clear" placeholder="默认城市渭南，请输入你要搜索的城市">
                     </div>
                     <!-- 搜索结束 -->
             </h1>
@@ -195,47 +195,42 @@
 </script>
 
 
-<script type="text/javascript">
-    // $(function(){
-    //     var isrun = false;
-    //     while (isrun = false) {
-    //     var button = document.getElementById("button");
-    //     button.innerHTML="详情";
-    //     var container = document.getElementById('foot'); //2、找到父级元素
-    //     container.insertBefore(span,container.childNodes[0]);
-    // }
-    // if (isrun == false) {
-    //     $(".button").css("display", "block");
-    //     isrun = true;
-    // }
-    // })
-</script>
 
+<script src="js/getWeather.js"></script>
+<script src="js/getdetail.js"></script>
 <script>
 $(function(){
+        getdata();
+        getdetail();
         $("#input-serach").on("change",function(){
         var city = $("#input-serach").val();
-        console.log(city);
+        // console.log(city);
         $.ajax({
             // 跨域只能通过get来请求
-            type: "post",
+            type: "get",
             url:"http://api.map.baidu.com/telematics/v3/weather?location="+city,
             // url: "http://api.map.baidu.com/telematics/v3/weather",
             data: {
                 "ak": "zVo5SStav7IUiVON0kuCogecm87lonOj",
                 // "location": "渭南",
-                "output": 'json'
+                "output": 'json',
             },
             dataType: 'jsonp',
             // 默认使用success
             success: function (result) {
-                console.log(result);
+                // console.log(result);
                 // console.log(result.results[0].index)
-                var html = template("weatherTemp", {
-                    "items": result.results[0].weather_data,
-                });
-    
-                document.querySelector("tbody").innerHTML = html;
+               if(result.error == 0){
+                    var html = template("weatherTemp", {
+                        "items": result.results[0].weather_data,
+                    });
+                    document.querySelector("tbody").innerHTML = html;
+               }else if(result.error == -3){
+                //    mui.toast("请输入有效正确的城市名称");
+                   var html = '<h3 style="color:navy;text-indent:2em;padding:15px;">您输入的城市名称有误,请重新输入！！！</h3>';
+                   $("#input-serach").val("");
+                   document.querySelector("tbody").innerHTML = html;
+               }
             }
     
             })
@@ -248,19 +243,15 @@ $(function(){
     //     // $("#input-serach").on("change",function(){
     //     $("tbody").on("click",function(){
     //         var city = $("#input-serach").val();
-
-
     var isClick = true;
     $("tbody").on("tap", "button", function () {
         var city = $("#input-serach").val();
         $.ajax({
-            // 跨域只能通过get来请求
-            type: "post",
+            type: "get",
             url: "http://api.map.baidu.com/telematics/v3/weather?location="+city,
             data: {
                 "ak": "zVo5SStav7IUiVON0kuCogecm87lonOj",
-                // "location": "渭南",
-                "output": 'json'
+                "output": 'json',
             },
             dataType: 'jsonp',
             // 默认使用success
@@ -268,7 +259,7 @@ $(function(){
                 // console.log(result);
                 // console.log(result.results[0].index)
                 var html1 = template("detailTemp", {
-                    "item1": result.results[0].index
+                    "item1": result.results[0].index,
                 });
                 document.querySelector("#detail-box").innerHTML = html1;
             }

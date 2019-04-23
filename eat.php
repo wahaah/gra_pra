@@ -63,7 +63,7 @@
         <div class="foods-list">
             <?php foreach($arr as $value):?>
             <div class="foods-item">
-                <a href="d<?php echo $value['id'] ?>.php">
+                <a href="detail.php?id=<?php echo $value['id'] ?>">
                     <div class="food">
                         <img src="<?php echo $value['img'] ?>">
                     </div>
@@ -142,18 +142,21 @@
                     pageSize:4
                 },
                 success:function(res){
-                    // console.log(res);
+                    console.log(res);
                     // 判断请求有没有数据
                     if(res.code ==1){
                         // 遍历数组，动态生成结构
                         var data = res.data;
+                        
                         // jquery方法each
                         $.each(data,function(index,val){
                             var str = '<div class="foods-item">\
-                                <div class="food">\
-                                    <img src="'+val['img']+'">\
-                                </div>\
-                                <div class="title">'+val['name']+'</div>\
+                                    <a href="detail.php?id='+val['id']+'">\
+                                        <div class="food">\
+                                            <img src="'+val['img']+'">\
+                                        </div>\
+                                    </a>\
+                                    <div class="title">'+val['name']+'</div>\
                                 <div class="sub">\
                                     <p class="flag">\
                                         <span class="yes mui-icon mui-icon-checkmarkempty">能吃</span>\

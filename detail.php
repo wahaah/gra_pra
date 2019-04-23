@@ -26,13 +26,18 @@
     <script src="assets/mui/js/mui.previewimage.js"></script>
 
     <script src="js/public.js"></script>
+    <style>
+        .mui-bar-nav~.mui-content {
+          padding-top: 0px; 
+        }
+    </style>
 </head>
 
 <body>
     <header class="mui-bar mui-bar-nav my-header">
         <a href="#" class="mui-icon mui-icon-arrowleft mui-pull-left"></a>
 
-        <h1 class="mui-title">樱桃</h1>
+        <h1 class="mui-title">详细描述</h1>
         <!-- mui-pull-right右浮动 -->
         <!-- <a class="mui-icon mui-icon-search mui-pull-right"></a> -->
     </header>
@@ -57,22 +62,72 @@
         </a>
     </nav>
     <div class="mui-content">
-        <div class="mui-content-padded">
+        <!-- <div class="mui-content-padded">
             <p>别名：车厘子、玛瑙、含桃</p>
             <div class="img">
                 <img src="img/yingtao.jpg" data-preview-src="" data-preview-group="1">
             </div>
             <p>孕妇适宜</p>
             <p class="des">樱桃富含维生素C、可促进矿物质和叶酸的吸收、还能降低雾霾伤害，增强孕妈免疫力。花青素、类胡萝卜素具有抗氧化的作用；褪黑素可改善孕期失眠症状，提高睡眠质量。</p>
-        </div>
+        </div> -->
     </div>
 </body>
+<!-- <script src="js/detail.js"></script> -->
+<script>
+    
+    
+    
+    $(function(){
+        // var url = window.location.href;// http://gra.com:8081/detail.php?id=1
+        var url = window.location.search;//?id=2
+        // console.log(url);
+        // var id = url.substr(4);
+        var id = Number(url.substr(4));
+        console.log(id);
+        // console.log(url.substr(4));
+        $.ajax({
+            type:"post",
+            url:"api/_getEatDetail.php",
+            data:{
+                id:id
+            },
+            success:function(res){
+                console.log(res);
+                if(res.code == 1){
+                    // 遍历数组，动态生成结构
+                    var data = res.data;
+
+                    $.each(data,function(index,val){
+                     var str = `<div class="mui-content-padded">
+                        <p>别名：${val['alias']}</p>
+                        <div class="img">
+                            <img src="${val['img']}" data-preview-src="" data-preview-group="1">
+                        </div>
+                        <p class="des" style="color:red;">孕妇${val['eat']}</p>
+                        <p class="des" style="color:black;">描述信息：<br />${val['des']}</p>
+                    </div> `;
+                    var detailItem = $(str);
+                    // console.log(foodsItem);
+                    detailItem.insertAfter('.mui-content');
+                                
+
+                    })
+                }
+                
+            }
+        })
+    
+    })
+
+   
+</script>
 <script>
     $(function () {
-                mui.previewImage();
-                mui.plusReady(function () {})
+        mui.previewImage();
+        mui.plusReady(function () {})
 
-            })
+    })
 </script>
+
 
 </html>

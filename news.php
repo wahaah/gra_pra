@@ -82,10 +82,9 @@
          // mysqli_connect()
          $connect1 = mysqli_connect(DB_HOST,DB_USER,DB_PWD,DB_NAME);
          // 准备sql语句
-         $sql1="SELECT n.title,n.img,n.content,c.name FROM zixunnews n
+         $sql1="SELECT n.id,n.title,n.img,n.content,c.name FROM zixunnews n
                 LEFT JOIN zixuncate c on c.id = n.c_id
-                WHERE n.c_id = {$cateId}
-                LIMIT 3";
+                WHERE n.c_id = {$cateId}";
         // 执行查询操作
         $result1 = mysqli_query($connect1,$sql1);  
         //数据集合 转换为二维数组
@@ -95,6 +94,7 @@
           $arr1[] = $row1 ;
         }
         // print_r($arr1);
+        // print_r($arr1[0]['id']);
    
 ?>
 
@@ -229,7 +229,8 @@
                             <ul class="mui-table-view">
                             <?php foreach($arr1 as $value1): ?>
                                     <li class="mui-table-view-cell mui-media">
-                                        <a href="javascript:;">
+                                        <!-- <a href="javascript:;"> -->
+                                        <a href="news_detail.php?id=<?php echo $value1['id'] ?>">
                                             <img class="mui-media-object mui-pull-left" src="<?php echo $value1['img'] ?>">
                                             <div class="mui-media-body">
                                                 <?php echo $value1['title'] ?>

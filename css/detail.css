@@ -19,11 +19,11 @@ img {
     height: 230px;
     /* flex: 1; */
 }
+
 .mui-content-padded .des {
     font-size: 14px;
-    color: #bbb;
+    color: #000;
 }
-
 
 /* 缩略图部分 */
 .mui-preview-image.mui-fullscreen {

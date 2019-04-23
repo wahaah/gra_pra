@@ -71,6 +71,12 @@
 </style>
     
 <style>
+    .mui-table-view-cell.mui-collapse .mui-table-view {
+        margin-left:9px;
+    }
+    .demo{
+        width : 0px;
+    }
     .page .page-main{
         padding: 10px 0;
     }
